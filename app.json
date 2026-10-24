@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "EnglishKu",
+    "slug": "englishku",
+    "scheme": "englishku",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.englishku",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.yourcompany.englishku",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF9E6",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ],
+      "backgroundColor": "#EEF7FF"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/englishku-logo-clean.png",
+          "imageWidth": 220,
+          "backgroundColor": "#FFF9E6"
+        }
+      ],
+      "expo-font",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "EnglishKu memakai mikrofon agar anak bisa berlatih mengucapkan kata. Suara tidak disimpan."
+        }
+      ],
+      "expo-asset",
+      "expo-sqlite"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "eb56662b-22e7-4622-bd6c-8e481e1b8e20"
+      }
+    },
+    "owner": "student_panto",
+    "updates": {
+      "url": "https://u.expo.dev/eb56662b-22e7-4622-bd6c-8e481e1b8e20",
+      "fallbackToCacheTimeout": 0
+    },
+    "backgroundColor": "#EEF7FF"
+  }
+}
